@@ -22,7 +22,7 @@ qlog = { workspace = true }
 smallvec = { version = "1.11", default-features = false }
 
 [dev-dependencies]
-criterion = { version = "0.5", default-features = false, features = ["html_reports"] }
+criterion = { package="codspeed-criterion-compat", version = "2.6.0", default-features = false, features = ["html_reports"] }
 test-fixture = { path = "../test-fixture" }
 
 [features]
